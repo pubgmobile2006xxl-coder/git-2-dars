@@ -14,7 +14,7 @@ import frame from "../../assets/Frame.png";
                         <li><a href="#">Faq</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    <button></button>
+                    <button>Kirish</button>
                 </div>
             </div>
         </header>
