@@ -1,3 +1,12 @@
 import React from "react";
 import App from './App.css';
-import
+import Header from "./Cmpanents/Header/Header";
+
+const Header = () => {
+  return(
+    <div>
+      <header/>
+    </div>
+  )
+}
+export default App
