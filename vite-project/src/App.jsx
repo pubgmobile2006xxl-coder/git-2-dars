@@ -5,7 +5,7 @@ import Header from "./Cmpanents/Header/Header";
 const Header = () => {
   return(
     <div>
-      <header/>
+      <Header/>
     </div>
   )
 }
