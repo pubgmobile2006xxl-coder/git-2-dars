@@ -7,7 +7,13 @@ const Header = () =>{
             <div className="container">
                 <div className="navbar">
                     <img src={frame} alt="rasm"/>
-                    
+                    <ul>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <button>Kirish</button>
                 </div>
             </div>
         </header>
