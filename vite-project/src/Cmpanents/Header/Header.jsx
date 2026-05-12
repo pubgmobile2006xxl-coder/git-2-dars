@@ -1,11 +1,10 @@
 import React from "react"
-import "Header.css"
-import frame from "../assets/Frame1.png"
+import "./Header.css"; 
+import frame from "../../assets/Frame.png";  
 
  const Header = () =>{
     return (
-         <>
-         <header>
+        <header>
             <div className="container">
                 <div className="navbar">
                     <img src={frame} alt="rasm"/>
@@ -19,9 +18,6 @@ import frame from "../assets/Frame1.png"
                 </div>
             </div>
         </header>
-         
-         
-         </>
     )
  }
  export default Header;
