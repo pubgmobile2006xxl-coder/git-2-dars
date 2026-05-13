@@ -1,36 +1,37 @@
-import React, { useTranslation } from "react"
-import "./Header.css"; 
-import frame from "../../assets/Frame.png";  
+import React from "react";
 import { useTranslation } from "react-i18next";
-import i18n from "../../i18n";
+import frame from "../../assets/Frame.png"; 
+import "./Header.css"; 
 
- const Header = () =>{
-    const {t,i18n} = useTranslation()
+const Header = () => {
+    // useSuspense: false qilsangiz, yuklanishdagi xatolarni o'zi hal qiladi
+    const { t, i18n } = useTranslation('translation', { useSuspense: false });
 
-    const handleCHangeLanguage = (event)=>{
-        i18n.changeLanguage(event.target.value)
-    }
+    const handleChangeLanguage = (event) => {
+        i18n.changeLanguage(event.target.value);
+    };
+
     return (
         <header>
             <div className="container">
                 <div className="navbar">
-                    <img src={frame} alt="rasm"/>
+                    <img src={frame} alt="logo"/>
                     <ul>
                         <li><a href="#">{t("header.Home")}</a></li>
-                        <li><a href="#">{t("header.About")}t</a></li>
+                        <li><a href="#">{t("header.About")}</a></li>
                         <li><a href="#">{t("header.Services")}</a></li>
                         <li><a href="#">{t("header.Work")}</a></li>
                         <li><a href="#">{t("header.Blog")}</a></li>
                     </ul>
-                    <select name="" id="" onChange={handleCHangeLanguage}>
-                        <option value="uzb">uzb</option>
-                        <option value="rus">rus</option>
-                        <option value="eng">eng</option>
+                    <select value={i18n.language} onChange={handleChangeLanguage}>
+                        <option value="uz">UZB</option>
+                        <option value="ru">RUS</option>
+                        <option value="en">ENG</option>
                     </select>
                     <button>Kirish</button>
                 </div>
             </div>
         </header>
-    )
- }
- export default Header;
+    );
+};
+export default Header;

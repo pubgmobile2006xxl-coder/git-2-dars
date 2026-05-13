@@ -1,10 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
- import App from './App.jsx'
- import './i18n';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './i18n'; // <--- HUDDI SHU QATORNI QO'SHING
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
-  </StrictMode>,
-)
+);
