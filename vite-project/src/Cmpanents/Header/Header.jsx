@@ -8,13 +8,18 @@ import frame from "../../assets/Frame.png";
             <div className="container">
                 <div className="navbar">
                     <img src={frame} alt="rasm"/>
-                    <select name="" id=""></select>
                     <ul>
-                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Blog</a></li>
                     </ul>
+                    <select name="" id="">
+                        <option value="uzb">uzb</option>
+                        <option value="rus">rus</option>
+                        <option value="eng">eng</option>
+                    </select>
                     <button>Kirish</button>
                 </div>
             </div>
