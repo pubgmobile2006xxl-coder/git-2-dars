@@ -8,6 +8,7 @@ import frame from "../../assets/Frame.png";
             <div className="container">
                 <div className="navbar">
                     <img src={frame} alt="rasm"/>
+                    <select name="" id=""></select>
                     <ul>
                         <li><a href="#">Service</a></li>
                         <li><a href="#">About</a></li>
